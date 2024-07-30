@@ -16,13 +16,13 @@ export const getSingleBook = async (req, res) => {
   try {
     const { id } = req.params;
     const book = await Book.findById(id);
-    if(!book){
-        return res.status(400).send({ message: "No book found" });
+    if (!book) {
+      return res.status(400).send({ message: "No book found" });
     }
-   return res.status(200).json(book);
+    return res.status(200).json(book);
   } catch (err) {
     console.log(err.message);
-   return res.status(500).json({ message: err.message });
+    return res.status(500).json({ message: err.message });
   }
 };
 
@@ -38,10 +38,10 @@ export const createBook = async (req, res) => {
       publishYear: req.body.publishYear,
     };
     const book = await Book.create(newBook);
-     res.status(201).send(book);
+    res.status(201).send(book);
   } catch (err) {
-      res.status(500).json({ message: err.message });
-      console.log(err.message);
+    res.status(500).json({ message: err.message });
+    console.log(err.message);
   }
 };
 
@@ -60,9 +60,21 @@ export const updateBook = async (req, res) => {
     await Book.findById(id);
     return res.status(200).send({ message: "Book updated successfully" });
   } catch (err) {
-      res.status(500).send({ message: err.message });
-      console.log(err.message);
+    console.log(err.message);
+    return res.status(500).send({ message: err.message });
   }
 };
 
-export const deleteBook = async (req, res) => {};
+export const deleteBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const book =await Book.findByIdAndDelete(id);
+    if (!book) {
+      return res.status(404).send("Book not found");
+    }
+    return res.status(200).send({ message: "Book is successfully deleted" });
+  } catch (error) {
+    return res.status(500).send({ message: err.message });
+    console.log(err.message);
+  }
+};
