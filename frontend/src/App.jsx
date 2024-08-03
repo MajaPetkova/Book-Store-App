@@ -5,6 +5,8 @@ import CreateBook from "./pages/CreateBook";
 import EditBook from "./pages/EditBook";
 import DeleteBook from "./pages/DeleteBook";
 import ShowBook from "./pages/ShowBook";
+import BookCard from "./components/home/BookCard";
+import BookTable from "./components/home/BookTable";
 
 
 const App = () => {
