@@ -1,4 +1,4 @@
-export const PORT = 5555;
+export const PORT = `${import.meta.env.PORT}`
 
-const dbname = 'bookStore';
-export const mongoDBUrl = `mongodb://localhost:27017/${dbname}`
+const dbname = `${import.meta.env.DB_NAME}`
+export const mongoDBUrl = `${import.meta.env.mongoDBUrl}/${dbname}`
