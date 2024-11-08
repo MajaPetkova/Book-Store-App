@@ -18,7 +18,7 @@ const CreateBook = () => {
     setLoading(true);
 
     axios
-      .post(`https://book-store-app-two-woad.vercel.app//books`, data)
+      .post(`https://book-store-app-jade-pi.vercel.app/books`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book created successfully", { variant: "success" });

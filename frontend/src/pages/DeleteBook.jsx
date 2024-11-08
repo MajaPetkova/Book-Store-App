@@ -14,7 +14,7 @@ const DeleteBook = () => {
   const deleteBook = () => {
     setLoading(true);
     axios
-      .delete(`https://book-store-app-two-woad.vercel.app/books/${id}`)
+      .delete(`https://book-store-app-jade-pi.vercel.app/books/${id}`)
       .then(() => {
         setLoading(false);
         navigate("/");
