@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://book-store-app-jade-pi.vercel.app/books`)
+      .get(`https://book-store-app-9ycm.onrender.com/books`)
       .then((res) => {
         setBooks(res.data.data);
         setLoading(false);
