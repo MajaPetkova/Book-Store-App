@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/books`)
+      .get(`https://book-store-app-two-woad.vercel.app//books`)
       .then((res) => {
         setBooks(res.data.data);
         setLoading(false);

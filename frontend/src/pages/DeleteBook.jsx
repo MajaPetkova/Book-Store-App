@@ -14,7 +14,7 @@ const DeleteBook = () => {
   const deleteBook = () => {
     setLoading(true);
     axios
-      .delete(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/books/${id}`)
+      .delete(`https://book-store-app-two-woad.vercel.app/books/${id}`)
       .then(() => {
         setLoading(false);
         navigate("/");

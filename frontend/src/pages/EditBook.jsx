@@ -17,7 +17,7 @@ const EditBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/books/${id}`).then((res) => {
+    axios.get(`https://book-store-app-two-woad.vercel.app//${id}`).then((res) => {
       setAuthor(res.data.author);
       setTitle(res.data.title);
       setPublishYear(res.data.publishYear);
@@ -34,7 +34,7 @@ const EditBook = () => {
     setLoading(true);
 
     axios
-      .put(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/books/${id}`, data)
+      .put(`https://book-store-app-two-woad.vercel.app//books/${id}`, data)
       .then(() => {
         setLoading(false);
         // console.log(res);
