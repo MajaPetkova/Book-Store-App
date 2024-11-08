@@ -1,3 +1,4 @@
 export const PORT = 5555;
 
-export const mongoDBUrl = 'mongodb+srv://majapetkova11:MJh1Hll52MBrlMBp@book-store.l4bwnek.mongodb.net/?retryWrites=true&w=majority&appName=Book-Store';
+const dbname = 'bookStore';
+export const mongoDBUrl = `mongodb://localhost:27017/${dbname}`
