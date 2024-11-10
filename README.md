@@ -14,10 +14,10 @@ Clone or download the project
 
 
 <ul>Server-side usage (PORT: 5555)</ul>
- <li>cd backend   // go to server folder</p>
+ <li>cd backend   // go to server folder</li>
  <li>npm install</li>
  <li>npm start </li>
-
+<br>
 <ul>Client-side usage:</ul>
  <li>cd frontend    // go to frontend folder</li>
  <li>npm run dev</li>
