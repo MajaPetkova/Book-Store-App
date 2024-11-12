@@ -1,7 +1,6 @@
 Book Store is a small MERN Application that helps us to store, read, edit, delete books.
 
 <h1>Book Store App - Live Demo</h1>
-<h2>https://book-store-app-frontend-xokh.onrender.com/</h2>
 
 Clone or download:
 
@@ -14,10 +13,13 @@ Clone or download:
 
 Server-side usage (PORT: 5555)
 
-  <p>cd backend   // go to server folder </p>
-  <p> npm install   </p>
-  <p> npm start</p>
+<p>cd backend   // go to server folder </p>
+<p> npm install   </p>
+<p> npm start</p>
 
 Client-side usage:
 <p>cd frontend</p>
 <p>npm run dev</p>
+
+<img src="./bookStore 1.png">
+<img src="./bookStore2.png">
