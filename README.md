@@ -11,15 +11,14 @@ Clone or download:
 <h4>Node ^20.0.0</h4>
 <h4>npm</h4>
 
-Server-side usage (PORT: 5555)
-
-<p>cd backend   // go to server folder </p>
-<p> npm install   </p>
-<p> npm start</p>
-
-Client-side usage:
-<p>cd frontend</p>
-<p>npm run dev</p>
+<ul>Server-side usage (PORT: 5555)</ul>
+ <li>cd backend   // go to server folder</li>
+ <li>npm install</li>
+ <li>npm start </li>
+<br>
+<ul>Client-side usage:</ul>
+ <li>cd frontend    // go to frontend folder</li>
+ <li>npm run dev</li>
 
 <img src="./bookStore 1.png">
 <img src="./bookStore2.png">
